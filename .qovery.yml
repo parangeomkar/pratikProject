@@ -1,7 +1,6 @@
 ---
 application:
   name: "pratikproject"
-  project: "pratikproject"
   organization: "QoveryCommunity"
 routers:
 - name: "main-pratikproject"
