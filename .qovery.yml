@@ -1,0 +1,11 @@
+---
+application:
+  name: "pratikproject"
+  project: "omkar-test"
+  organization: "QoveryCommunity"
+routers:
+- name: "main-pratikproject"
+  routes:
+  - application_name: "pratikproject"
+    paths:
+    - "/*"
