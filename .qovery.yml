@@ -2,6 +2,8 @@
 application:
   name: "pratikproject"
   organization: "QoveryCommunity"
+  publicly_accessible: true
+  port: 5000
 routers:
 - name: "main-pratikproject"
   routes:
