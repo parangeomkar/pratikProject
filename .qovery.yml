@@ -5,6 +5,9 @@ application:
   organization: "QoveryCommunity"
 routers:
 - name: "main-pratikproject"
+  custom_domains:
+  - branch: master
+    domain: pratikbhoy.me
   routes:
   - application_name: "pratikproject"
     paths:
