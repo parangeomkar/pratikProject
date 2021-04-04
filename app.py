@@ -6,8 +6,6 @@ from bson.json_util import dumps
 
 #setup server configuration
 app = Flask(__name__)
-app.config["DEBUG"] = True
-
 
 #DB configuration
 myclient = pymongo.MongoClient("mongodb+srv://pratik:12345@cluster0.qgys7.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
@@ -18,6 +16,10 @@ mycol = mydb["users"]
 
 
 #User displayed pages
+@app.route('/')
+def homepage():
+    return "Home"
+
 @app.route('/login', methods=['GET'])
 def login():
     return render_template("login.html")
@@ -84,8 +86,4 @@ def user():
 
 
 
-
-
-
-
-app.run()
+app.run(use_reloader=True)
