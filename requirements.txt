@@ -1,4 +1,4 @@
-dnspython
-Flask
+qovery-client==0.2.0
+Flask==1.0.2
 pymongo
-gunicorn
+dnspython
