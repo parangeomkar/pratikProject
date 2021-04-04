@@ -1,14 +1,6 @@
 from flask import Flask, redirect, url_for, render_template, request, jsonify
 import pymongo
 from bson.json_util import dumps
-import os
-ON_HEROKU = os.environ.get('ON_HEROKU')
-
-if ON_HEROKU:
-    # get the heroku port
-    port = int(os.environ.get('PORT', 17995))  # as per OP comments default is 17995
-else:
-    port = 3000
 
 
 #setup server configuration
