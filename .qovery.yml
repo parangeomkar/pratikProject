@@ -1,0 +1,10 @@
+---
+application:
+  name: "pratikproject"
+  organization: "QoveryCommunity"
+routers:
+- name: "main-pratikproject"
+  routes:
+  - application_name: "pratikproject"
+    paths:
+    - "/*"
