@@ -16,6 +16,7 @@ mycol = mydb["users"]
 
 
 
+
 #User displayed pages
 @app.route('/login', methods=['GET'])
 def login():
