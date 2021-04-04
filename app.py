@@ -92,5 +92,5 @@ def user():
 
 
 
-
-app.run(use_reloader=True, port=port)
+if __name__ == '__main__':
+    app.run()
